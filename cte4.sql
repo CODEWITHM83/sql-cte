@@ -7,4 +7,5 @@ select * from (
         row_number() over (partition by department order by salary desc) as rn
     from employees
 ) as ranked_employees
-where rn = 1;
+where rn = 1; 
+-- select
